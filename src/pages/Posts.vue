@@ -7,7 +7,7 @@
           <h2>{{ node.title }}</h2>
         </router-link>
         <span>{{ node.date }}</span>
-        <div v-html="node.desc" />
+        <div>{{ node.excerpt }}</div>
       </li>
     </ul>
   </Layout>
@@ -21,6 +21,7 @@
           _id
           title
           date (format: "D MMMM, YYYY")
+          excerpt
           path
         }
       }

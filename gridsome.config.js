@@ -12,7 +12,7 @@ module.exports = {
       options: {
         path: "posts/*.md",
         typeName: "Post",
-        route: "/:slug"
+        route: "/post/:fileInfo__name"
       }
     },
     {
